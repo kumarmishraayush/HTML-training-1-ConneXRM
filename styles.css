@@ -1,0 +1,131 @@
+.Hero
+{
+    background-image: url("img/img\ 1.jpg");
+    height: 680px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+
+.Hero-left
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 30px;
+}
+
+.Hero-right
+{
+    width: 60%;
+    padding-left: 8%;
+}
+
+
+
+.Hero-right img{
+    height: 500px;
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Hero-left
+    {
+        display: none;
+    }
+    .ayush-left
+    {
+        display: none;
+        
+    }
+
+    .ayush-right
+    {
+        margin-left: 15%;
+        margin-bottom: 10%;
+    }
+    .Hero-right img
+    {
+        height:380px;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.Hero-right img {
+    animation: slideInFromLeft 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Hero-left .quote {
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+#quote1 {
+    animation-delay: 0s;
+}
+
+#quote2 {
+    animation-delay: 3s;
+}
+
+#quote3 {
+    animation-delay: 6s;
+}
+
+.card-dec {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+.card {
+    flex: 0 0 auto;
+    margin-right: 30px;
+    text-wrap: wrap;
+}
+
+.ayush{
+    display: flex;
+}
+.ayush-right
+{
+    width: 50%;
+    margin-top: 15%;
+     
+    align-items: center;
+}
+
+.ayush-left
+{
+    width: 50%;
+}
+.ayush-left img{
+    
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}

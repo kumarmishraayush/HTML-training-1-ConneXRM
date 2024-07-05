@@ -53,8 +53,16 @@
     {
         height:380px;
     }
+    #contact-us
+    {
+        width: 100%;
+    }
 }
 
+#contact-us
+{
+    width: 50%;
+}
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
@@ -101,6 +109,9 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: 10px;
+    margin: 30px;
+    margin-bottom: 80px;
+    
 }
 .card {
     flex: 0 0 auto;
